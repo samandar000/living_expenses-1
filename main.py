@@ -1,14 +1,14 @@
 # Monthly expenses
 monthly_expenses = {
     'rent': 1200,
-    'utilities': 100,
-    'transport': 100,
-    'food': 100,
-    'entertainment': 100,
-    'clothing': 100,
+    'utilities': 300,
+    'transport': 450,
+    'food': 600,
+    'entertainment': 110,
+    'clothing': 220,
     'health': 30,
     'internet': 60,
-    'education': 100,
+    'education': 200,
     'other': 100
 }
 
