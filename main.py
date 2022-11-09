@@ -21,7 +21,7 @@ def total_expenses(monthly_expenses: dict) -> int:
     Returns:
         total_expenses: total expenses
     """
-    return (sum(list(monthly_expenses.values())))
+    return (sum(monthly_expenses.values()))
 
 # Find the least expensive expense
 def least_expensive(monthly_expenses: dict) -> str:
@@ -32,7 +32,14 @@ def least_expensive(monthly_expenses: dict) -> str:
     Returns:
         least_expensive: least expensive expense
     """
-    return
+    mx = list(monthly_expenses.values())[0]
+    
+    for  k,v in monthly_expenses.items():
+        if mx  > v:
+            answer=v
+
+    return answer
+    
 
 # Find the most expensive expense
 def most_expensive(monthly_expenses: dict) -> str:
@@ -44,4 +51,4 @@ def most_expensive(monthly_expenses: dict) -> str:
         most_expensive: most expensive expense
     """
     return
-print(total_expenses(monthly_expenses))
+print(least_expensive(monthly_expenses))
