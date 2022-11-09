@@ -50,5 +50,10 @@ def most_expensive(monthly_expenses: dict) -> str:
     Returns:
         most_expensive: most expensive expense
     """
-    return
-print(least_expensive(monthly_expenses))
+    mx = 0
+    for k, v in monthly_expenses.items():
+        if mx  > v:
+            answer=v
+        return v
+    
+print(most_expensive(monthly_expenses))
